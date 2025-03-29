@@ -1,0 +1,4 @@
+openpyxl
+python-pptx
+PyPDF2
+pywin32>=0 ; sys_platform == 'win32' # Windows 環境で .ppt ファイル処理に必要 
