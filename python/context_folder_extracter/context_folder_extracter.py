@@ -431,14 +431,23 @@ def read_file_content(file_path):
             with open(file_path, 'r', encoding='utf-8') as f:
                 return f.read()
         except UnicodeDecodeError:
+            # UTF-8 で失敗した場合、Shift-JIS を試す
             try:
                 with open(file_path, 'r', encoding='shift-jis') as f:
                     return f.read()
+            except UnicodeDecodeError:
+                # Shift-JIS でも失敗した場合、CP932 を試す
+                try:
+                    with open(file_path, 'r', encoding='cp932') as f:
+                        return f.read()
+                except Exception as e:
+                    logger.warning(f"ファイル {file_path} の読込中にエラー発生 (UTF-8, Shift-JIS, CP932試行後): {e}")
+                    return f"[ファイル読込エラー(エンコーディング不明): {file_path}]"
             except Exception as e:
                 logger.warning(f"ファイル {file_path} の読込中にエラー発生 (Shift-JIS試行後): {e}")
                 return f"[ファイル読込エラー(Shift-JIS試行後): {file_path}]"
         except Exception as e:
-            logger.warning(f"ファイル {file_path} の読込中にエラー発生: {e}")
+            logger.warning(f"ファイル {file_path} の読込中にエラー発生 (UTF-8試行時): {e}")
             return f"[ファイル読込エラー: {file_path}]"
 
 def find_folders_and_files(target_folder_path, days=None, exclude_patterns=None):
