@@ -24,11 +24,11 @@
 
 ```bash
 # Macの場合
-cd /Users/matuni__/Desktop/BMS/tools/python_tools/context_folder_extracter
+cd /path/to/context_folder_extracter
 python context_folder_extracter.py <target_folder_path>
 
 # Windowsの場合
-cd D:\BMS\tools\python_tools\context_folder_extracter
+cd C:\path\to\context_folder_extracter
 python context_folder_extracter.py <target_folder_path>
 ```
 
@@ -36,11 +36,11 @@ python context_folder_extracter.py <target_folder_path>
 
 ```bash
 # Macの場合
-cd /Users/matuni__/Desktop/BMS/tools/python_tools/context_folder_extracter
+cd /path/to/context_folder_extracter
 python context_folder_extracter_ui.py
 
 # Windowsの場合
-cd D:\BMS\tools\python_tools\context_folder_extracter
+cd C:\path\to\context_folder_extracter
 python context_folder_extracter_ui.py
 ```
 
@@ -56,28 +56,28 @@ python context_folder_extracter_ui.py
 
 ```bash
 # Macの場合、指定パスのフォルダを抽出
-cd /Users/matuni__/Desktop/BMS/tools/python_tools/context_folder_extracter
-python context_folder_extracter.py /Users/matuni__/Desktop/BMS/workspace/project1
+cd /path/to/context_folder_extracter
+python context_folder_extracter.py /path/to/target_folder
 
 # 期間を過去30日以内に変更して抽出する場合（Windows）
-cd D:\BMS\tools\python_tools\context_folder_extracter
-python context_folder_extracter.py D:\BMS\workspace\project1 --days 30
+cd C:\path\to\context_folder_extracter
+python context_folder_extracter.py C:\path\to\target_folder --days 30
 
 # すべての期間のファイルを対象にする場合（Windows）
-cd D:\BMS\tools\python_tools\context_folder_extracter
-python context_folder_extracter.py D:\BMS\workspace\project1 --all
+cd C:\path\to\context_folder_extracter
+python context_folder_extracter.py C:\path\to\target_folder --all
 
 # 特定のパターンを含むフォルダやファイルを除外する場合（Windows）
-cd D:\BMS\tools\python_tools\context_folder_extracter
-python context_folder_extracter.py D:\BMS\workspace\project1 --exclude temp backup test
+cd C:\path\to\context_folder_extracter
+python context_folder_extracter.py C:\path\to\target_folder --exclude temp backup test
 
 # 詳細なログを出力する場合（Mac）
-cd /Users/matuni__/Desktop/BMS/tools/python_tools/context_folder_extracter
-python context_folder_extracter.py /Users/matuni__/Desktop/BMS/workspace/project1 --verbose
+cd /path/to/context_folder_extracter
+python context_folder_extracter.py /path/to/target_folder --verbose
 
 # 複数のオプションを組み合わせる場合（Windows）
-cd D:\BMS\tools\python_tools\context_folder_extracter
-python context_folder_extracter.py D:\BMS\workspace\project1 --all --exclude test temp --verbose
+cd C:\path\to\context_folder_extracter
+python context_folder_extracter.py C:\path\to\target_folder --all --exclude test temp --verbose
 ```
 
 ### GUI版の使い方
