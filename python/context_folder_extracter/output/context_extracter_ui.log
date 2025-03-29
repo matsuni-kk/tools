@@ -1,0 +1,5 @@
+2025-03-29 13:17:17,296 - INFO - スクリプトディレクトリ: /Users/matuni__/Desktop/BMS/tools/python_tools/context_folder_extracter
+2025-03-29 13:17:17,296 - INFO - 出力ディレクトリ: /Users/matuni__/Desktop/BMS/tools/python_tools/context_folder_extracter/output
+2025-03-29 13:17:17,296 - INFO - ログファイルパス: /Users/matuni__/Desktop/BMS/tools/python_tools/context_folder_extracter/output/context_extracter_ui.log
+2025-03-29 13:17:18,210 - INFO - macOS用BMSルートディレクトリを設定: /Users/matuni__/Desktop/BMS
+2025-03-29 13:17:18,210 - INFO - BMSルートディレクトリ: /Users/matuni__/Desktop/BMS
