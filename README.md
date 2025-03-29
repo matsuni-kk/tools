@@ -7,5 +7,6 @@
 - `python/`: Pythonで作成されたツールやスクリプトを格納します。
 - `html/`: HTML、CSS、JavaScriptなどで構成される静的なWebツールやテンプレートを格納します。
 - `chrome_extension/`: Google Chrome拡張機能を格納します。
+- `powershell/`: PowerShellスクリプトを格納します。
 
 各ディレクトリ内の詳細については、それぞれの `README.md` を参照してください。 # tools
