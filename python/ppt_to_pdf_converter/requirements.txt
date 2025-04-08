@@ -1,0 +1,2 @@
+# Windows環境でのみ必要
+pywin32; sys_platform == 'win32' 
